@@ -12,7 +12,7 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
+    <div className="h-screen bg-gradient-to-r from-blue-500 to-purple-500 flex justify-center items-center text-white">
       <motion.div
         className="container mx-auto px-4 text-center"
         initial={{ opacity: 0 }}

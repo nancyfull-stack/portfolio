@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
-        {/* Ensure Navigation is included here */}
+        
         <Navigation />
         <div className="flex-grow">
           <Routes>
