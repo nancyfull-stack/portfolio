@@ -12,7 +12,7 @@ function About() {
       >
         {/* Title Section */}
         <motion.h1
-          className="text-4xl font-bold text-gray-800 mb-6"
+          className="text-4xl font-bold text-gray-800 "
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -28,7 +28,7 @@ function About() {
           transition={{ delay: 0.5, duration: 1 }}
         >
           <img
-            src="profile picture.jpeg"  // Replace with your profile picture
+            src="src/assets/profile picture.jpeg"  // Replace with your profile picture
             alt="Profile"
             className="rounded-full w-32 h-32 object-cover border-4 border-gray-300"
           />
@@ -36,7 +36,7 @@ function About() {
 
         {/* Introduction Section */}
         <motion.p
-          className="text-xl text-white-900 mb-6 max-w-3xl mx-auto"
+          className="text-md text-white-700 mb-6 max-w-2xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
@@ -46,7 +46,7 @@ function About() {
 
         {/* Skills Section */}
         <motion.h2
-          className="text-2xl font-semibold text-white-900 mb-4"
+          className="text-xl font-semibold text-white-800 mb-4"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.5 }}
@@ -55,7 +55,7 @@ function About() {
         </motion.h2>
         
         <motion.div
-          className="flex justify-center gap-6 flex-wrap mb-8"
+          className="flex justify-center gap-4 flex-wrap mb-8"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 2 }}
@@ -70,7 +70,7 @@ function About() {
 
         {/* Education Section (Optional) */}
         <motion.h2
-          className="text-2xl font-semibold text-white-900 mb-4"
+          className="text-xl font-semibold text-white-900 mb-4"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2.5 }}
@@ -79,17 +79,17 @@ function About() {
         </motion.h2>
         
         <motion.p
-          className="text-lg text-white-700 mb-6 max-w-3xl mx-auto"
+          className="text-md text-white-700 mb-6 max-w-3xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3 }}
         >
-          Bachelor of Computer Science (B.Sc) - Mumbai University (2017-2019)
+          Bachelor of Computer Science (B.Sc-CS) - Mumbai University (2017-2019)
         </motion.p>
 
         {/* Experience Section (Optional) */}
         <motion.h2
-          className="text-2xl font-semibold text-white-900 mb-4"
+          className="text-xl font-semibold text-white-900 mb-4"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 3.5 }}
@@ -98,7 +98,7 @@ function About() {
         </motion.h2>
 
         <motion.p
-          className="text-lg text-white-600 mb-6 max-w-3xl mx-auto"
+          className="text-md text-white-600 mb-6 max-w-3xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 4 }}

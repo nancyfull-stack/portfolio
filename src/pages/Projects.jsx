@@ -6,9 +6,9 @@ function Projects() {
   const projects = [
     {
       title: "Project One",
-      description: "A brief description of Project One. It includes some awesome features.",
-      technologies: ["React", "Tailwind CSS", "Node.js"],
-      link: "https://github.com/yourusername/project-one",  // Replace with your project link
+      description: "Search as you type: Filters out pokemons even in cases of typos using fuzzy-search",
+      technologies: ["html", "CSS", "Javascript", "Node.js"],
+      link: "https://github.com/SoniSPprajapati/pokyman",  // Replace with your project link
       image: "https://via.placeholder.com/400", // Replace with project image URL
     },
     {
