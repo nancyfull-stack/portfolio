@@ -24,7 +24,9 @@ function Home() {
           transition={{ delay: 1, duration: 1 }}
         >
           Welcome to My Portfolio
+
         </motion.h1>
+        <p className='text-2xl text-bold'>Hi, I am Soni here</p>
 
         {/* Running Text with animation */}
         <motion.p
