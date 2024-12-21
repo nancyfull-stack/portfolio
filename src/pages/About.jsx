@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'; // For animations
 
 function About() {
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
+    <div className="h-screen bg-gradient-to-r from-blue-500 to-purple-500 flex justify-center items-center text-white">
       <motion.div
         className="container mx-auto px-4 text-center"
         initial={{ opacity: 0 }}
@@ -22,13 +22,13 @@ function About() {
 
         {/* Profile Section */}
         <motion.div
-          className="flex justify-center items-center mb-8"
+          className="flex justify-center items-center mb-2"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
           <img
-            src="https://via.placeholder.com/150"  // Replace with your profile picture
+            src="profile picture.jpeg"  // Replace with your profile picture
             alt="Profile"
             className="rounded-full w-32 h-32 object-cover border-4 border-gray-300"
           />
@@ -36,7 +36,7 @@ function About() {
 
         {/* Introduction Section */}
         <motion.p
-          className="text-xl text-gray-600 mb-6 max-w-3xl mx-auto"
+          className="text-xl text-white-900 mb-6 max-w-3xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
@@ -46,7 +46,7 @@ function About() {
 
         {/* Skills Section */}
         <motion.h2
-          className="text-2xl font-semibold text-gray-800 mb-4"
+          className="text-2xl font-semibold text-white-900 mb-4"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.5 }}
@@ -60,17 +60,17 @@ function About() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 2 }}
         >
-          <span className="text-gray-700 font-semibold">React</span>
-          <span className="text-gray-700 font-semibold">JavaScript</span>
-          <span className="text-gray-700 font-semibold">Node.js</span>
-          <span className="text-gray-700 font-semibold">Tailwind CSS</span>
-          <span className="text-gray-700 font-semibold">HTML & CSS</span>
-          <span className="text-gray-700 font-semibold">MongoDB</span>
+          <span className="text-white-700 font-semibold">React</span>
+          <span className="text-white-700 font-semibold">JavaScript</span>
+          <span className="text-white-700 font-semibold">Node.js</span>
+          <span className="text-white-700 font-semibold">Tailwind CSS</span>
+          <span className="text-white-700 font-semibold">HTML & CSS</span>
+          <span className="text-white-700 font-semibold">MongoDB</span>
         </motion.div>
 
         {/* Education Section (Optional) */}
         <motion.h2
-          className="text-2xl font-semibold text-gray-800 mb-4"
+          className="text-2xl font-semibold text-white-900 mb-4"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2.5 }}
@@ -79,17 +79,17 @@ function About() {
         </motion.h2>
         
         <motion.p
-          className="text-lg text-gray-600 mb-6 max-w-3xl mx-auto"
+          className="text-lg text-white-700 mb-6 max-w-3xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3 }}
         >
-          Bachelor of Computer Applications (BCA) - XYZ University (2018-2021)
+          Bachelor of Computer Science (B.Sc) - Mumbai University (2017-2019)
         </motion.p>
 
         {/* Experience Section (Optional) */}
         <motion.h2
-          className="text-2xl font-semibold text-gray-800 mb-4"
+          className="text-2xl font-semibold text-white-900 mb-4"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 3.5 }}
@@ -98,12 +98,12 @@ function About() {
         </motion.h2>
 
         <motion.p
-          className="text-lg text-gray-600 mb-6 max-w-3xl mx-auto"
+          className="text-lg text-white-600 mb-6 max-w-3xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 4 }}
         >
-          Frontend Developer at ABC Company (2022-Present)
+          Amazon Seller Account Manager at Sunrise Luxury Company: E-Commerce (2022-Present)
         </motion.p>
       </motion.div>
     </div>

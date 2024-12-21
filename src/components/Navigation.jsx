@@ -1,10 +1,10 @@
-// src/components/Navigation.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
-    <nav className="flex justify-between items-center p-4 bg-blue-500 text-white fixed top-0 left-0 right-0 z-10">
+    <nav className="flex justify-between items-center p-3 bg-blue-500 text-white fixed top-0 left-0 right-0 z-10">
       {/* Logo on the left */}
       <div className="text-2xl font-bold">
         <Link to="/">My Portfolio</Link>
