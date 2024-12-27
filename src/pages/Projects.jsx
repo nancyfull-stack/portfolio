@@ -6,24 +6,24 @@ function Projects() {
   const projects = [
     {
       title: "Project One",
-      description: "Search as you type: Filters out pokemons even in cases of typos using fuzzy-search",
+      description: "Search as you type: Filters out pokemons even in cases of typos using fuzzy-search, Keyboard Accessibility: Press / to quickly focus on the search bar., Shuffle Pokémon: Randomizes Pokémon on every page load using array-shuffle., Bootstrap Components: Built with Bootstrap (because it’s still alive and kicking, lol).",
       technologies: ["html", "CSS", "Javascript", "Node.js"],
       link: "https://github.com/SoniSPprajapati/pokyman",  // Replace with your project link
-      image: "https://via.placeholder.com/400", // Replace with project image URL
+      image: "https://tse1.mm.bing.net/th?id=OIP.YyqFGve6yDo2qQLxjV1GigHaEy&pid=Api&P=0&h=180", // Replace with project image URL
     },
     {
       title: "Project Two",
-      description: "A brief description of Project Two. It includes some great functionality.",
+      description: "Contact form inspired by the Untitled UI submits to Google Forms, [1] Add controlled input elements [2] React Hook Form [3] Validation [4] Routing: react-router-dom.",
       technologies: ["JavaScript", "Express", "MongoDB"],
-      link: "https://github.com/yourusername/project-two",  // Replace with your project link
-      image: "https://via.placeholder.com/400", // Replace with project image URL
+      link: "https://github.com/nancyfull-stack/Untitled-UI-Contact-Form-1",  // Replace with your project link
+      image: "https://cdn.dribbble.com/userupload/4103465/file/original-16252a20bdb14427e9d60e686802095f.jpg?compress=1&resize=1504x1128", // Replace with project image URL
     },
     {
       title: "Project Three",
-      description: "A brief description of Project Three. It's a full-stack application.",
+      description: "Highly Reusable Accordion Component.",
       technologies: ["Vue", "Firebase", "Tailwind CSS"],
-      link: "https://github.com/yourusername/project-three",  // Replace with your project link
-      image: "https://via.placeholder.com/400", // Replace with project image URL
+      link: "brandoni.netlify.app/",  // Replace with your project link
+      image: "https://i.ytimg.com/vi/SQWMFFhBSaE/maxresdefault.jpg", // Replace with project image URL
     }
   ];
 
