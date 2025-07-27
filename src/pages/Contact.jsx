@@ -1,84 +1,89 @@
 import React from 'react';
-import { useForm } from 'react-hook-form'; // Import React Hook Form
-import { motion } from 'framer-motion'; // Import Framer Motion
+import { useForm } from 'react-hook-form';
+import { motion } from 'framer-motion';
 
 function Contact() {
-  const { register, handleSubmit, formState: { errors } } = useForm(); // Initialize useForm hook
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
-    // Here you can handle form submission (send to your backend, or use email services)
     console.log(data);
     alert('Your message has been submitted!');
   };
 
   return (
-    <div className="h-screen bg-gradient-to-r from-blue-500 to-purple-500 flex justify-center items-center text-white">
+    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex justify-center items-center px-4 py-20">
       <motion.div
-        className="container mx-auto px-4 text-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        className="w-full max-w-2xl bg-white rounded-lg shadow-lg p-8"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-4xl font-bold text-gray-800 mb-6">Contact Me</h1>
-        
-        <motion.form
-          onSubmit={handleSubmit(onSubmit)}
-          className="bg-white p-6 rounded-lg shadow-lg max-w-xl mx-auto"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
+        <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">Contact Me</h1>
+
+        <form onSubmit={handleSubmit(onSubmit)} noValidate>
           {/* Name Field */}
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-lg text-gray-700 mb-2">Name</label>
+          <div className="mb-6">
+            <label htmlFor="name" className="block text-lg font-medium text-gray-700 mb-2">
+              Name
+            </label>
             <input
               id="name"
               type="text"
               {...register('name', { required: 'Name is required' })}
-              className="w-full p-3 border border-gray-300 rounded-lg"
+              className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ${
+                errors.name ? 'border-red-500' : 'border-gray-300'
+              }`}
             />
-            {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+            {errors.name && <p className="text-red-500 mt-1 text-sm">{errors.name.message}</p>}
           </div>
 
           {/* Email Field */}
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-lg text-gray-700 mb-2">Email</label>
+          <div className="mb-6">
+            <label htmlFor="email" className="block text-lg font-medium text-gray-700 mb-2">
+              Email
+            </label>
             <input
               id="email"
               type="email"
-              {...register('email', { 
+              {...register('email', {
                 required: 'Email is required',
                 pattern: {
                   value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-                  message: 'Please enter a valid email address'
-                }
+                  message: 'Please enter a valid email address',
+                },
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg"
+              className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ${
+                errors.email ? 'border-red-500' : 'border-gray-300'
+              }`}
             />
-            {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+            {errors.email && <p className="text-red-500 mt-1 text-sm">{errors.email.message}</p>}
           </div>
 
           {/* Message Field */}
-          <div className="mb-4">
-            <label htmlFor="message" className="block text-lg text-gray-700 mb-2">Message</label>
+          <div className="mb-6">
+            <label htmlFor="message" className="block text-lg font-medium text-gray-700 mb-2">
+              Message
+            </label>
             <textarea
               id="message"
+              rows="5"
               {...register('message', { required: 'Message is required' })}
-              rows="4"
-              className="w-full p-3 border border-gray-300 rounded-lg"
+              className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ${
+                errors.message ? 'border-red-500' : 'border-gray-300'
+              }`}
             ></textarea>
-            {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
+            {errors.message && <p className="text-red-500 mt-1 text-sm">{errors.message.message}</p>}
           </div>
 
           {/* Submit Button */}
           <motion.button
             type="submit"
-            className="bg-blue-500 text-white py-3 px-6 rounded-lg w-full mt-4 hover:bg-blue-600 transition duration-300"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition transform"
             whileHover={{ scale: 1.05 }}
           >
             Send Message
           </motion.button>
-        </motion.form>
+        </form>
       </motion.div>
     </div>
   );

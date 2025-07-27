@@ -4,13 +4,14 @@ import { FaWhatsapp, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-8 mt-8">
-      <div className="container mx-auto text-center">
-        <p className="text-lg mb-4">Connect with me:</p>
-        <div className="flex justify-center gap-6 mb-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p className="text-lg mb-6 sm:mb-8 font-semibold">Connect with me:</p>
+        
+        <div className="flex justify-center gap-8 mb-6 sm:mb-8 text-3xl">
           {/* Email Icon */}
           <a
             href="mailto:your-email@example.com"  // Replace with your email
-            className="text-2xl hover:text-purple-400 transition duration-300"
+            className="hover:text-purple-400 transition duration-300"
             aria-label="Email"
           >
             <FaEnvelope />
@@ -21,7 +22,7 @@ function Footer() {
             href="https://wa.me/yourphonenumber"  // Replace with your WhatsApp link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl hover:text-green-500 transition duration-300"
+            className="hover:text-green-500 transition duration-300"
             aria-label="WhatsApp"
           >
             <FaWhatsapp />
@@ -32,7 +33,7 @@ function Footer() {
             href="https://twitter.com/yourusername"  // Replace with your Twitter handle
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl hover:text-blue-500 transition duration-300"
+            className="hover:text-blue-500 transition duration-300"
             aria-label="Twitter"
           >
             <FaTwitter />
@@ -43,14 +44,14 @@ function Footer() {
             href="https://instagram.com/yourusername"  // Replace with your Instagram handle
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl hover:text-pink-500 transition duration-300"
+            className="hover:text-pink-500 transition duration-300"
             aria-label="Instagram"
           >
             <FaInstagram />
           </a>
         </div>
         
-        <p className="text-sm">
+        <p className="text-sm text-gray-400">
           &copy; {new Date().getFullYear()} Soni Prajapati. All Rights Reserved.
         </p>
       </div>
